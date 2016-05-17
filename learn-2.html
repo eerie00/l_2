@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery L2</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<style media="screen">
+		#text{
+
+			border: 20px solid #ededed;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		button{
+			color:white;
+			background: green;
+			padding: 10px;
+			border: 0;
+			cursor:pointer;
+
+		}
+
+		.myClass{
+			padding-top: 50px;
+		}
+	</style>
+</head>
+<body>
+
+
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center myClass">
+						<button class="btn btn-danger" id="hide">Hide</button>
+						<button class="btn btn-success" id="show">Show</button>
+						<button class="btn btn-info" id="toggle">Toggle</button>
+
+						<div id="text">
+
+
+							<h3>Hide, Show, Toggle</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						</div>
+					</div>
+				</div>
+		</div>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	 <script>
+	 $(document).ready(function(){
+
+			$('#hide').click(function(){
+				$('#text').hide('slow');
+			})
+
+			$('#show').click(function(){
+				$('#text').show('slow');
+			})
+
+			$('#toggle').click(function(){
+				$('#text').toggle('slow');
+			})
+	 });
+	 </script>
+
+</body>
+</html>
